@@ -145,6 +145,8 @@ int main()
 	cout << "\n\nYour new list reads: ";
 	printList(head);
 
+
+	// you must clear the input, before using get, or it will immediately return 0.
 	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	cin.get();
 
